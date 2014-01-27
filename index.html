@@ -1,7 +1,11 @@
 <html>
   <head><title>Authentication</title>
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
+    <video id="videoStream"></video>
+    <canvas id="snapShot"></canvas>
+    <button id="takePhoto">Take Photo!</button>
     <form action="sendSms.php" method="POST" id="getSmsForm">
       Phone:<input type="text" id="phoneNumber" name="phoneNumber" /><br />
       Name :<input type="text" id="name" name="name" /><br />
