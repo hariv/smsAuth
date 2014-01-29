@@ -1,12 +1,13 @@
 <html>
   <head><title>Authentication</title>
-    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-    <video id="videoStream"></video>
-    <canvas id="snapShot"></canvas>
-    <button id="takePhoto">Take Photo!</button>
-    <form action="sendSms.php" method="POST" id="getSmsForm">
+    <video id="webcam"></video>
+        <canvas id="snapShot"></canvas>
+    <script src="main.js"></script>
+        <script type="text/javascript" src="HTML5-Face-Detection/scripts/ccv.js"></script>
+        <script type="text/javascript" src="HTML5-Face-Detection/scripts/face.js"></script>
+        <form action="sendSms.php" method="POST" id="getSmsForm">
       Phone:<input type="text" id="phoneNumber" name="phoneNumber" /><br />
       Name :<input type="text" id="name" name="name" /><br />
       <input type="submit" id="submitButton" value="Get Password!!"/>
